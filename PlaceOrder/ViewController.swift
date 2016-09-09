@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    
+    @IBOutlet private weak var minusButton: UIButton!
+    @IBOutlet private weak var countTextField: UITextField!
+    @IBOutlet private weak var plusButton: UIButton!
+    @IBOutlet private weak var subtotalLabel: UILabel!
+    @IBOutlet private weak var totalLabel: UILabel!
+    
+    private var price = 118
+    private var coupon = 20
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
